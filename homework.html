@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            margin: 0;
+            color:rgb(173,168,160);
+        }
+        .menu{
+            list-style-type: none;
+          display: flex;
+        }
+       .three{
+        width: 100%;
+       }
+       .block_three{
+        order:3;
+       }
+       .float{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-left: 20px;
+        }
+        .block_second{
+           width: 53%;
+           order:2;
+        }
+        .block_first{
+           width: 20%;
+           order:1;
+        }
+        .all{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+           
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .block_three{
+            width: 20%;
+        }
+        @media screen and (max-width: 960px){
+            .block_three{
+               display: none;
+            }
+        }
+        @media screen and (max-width: 560px){
+            .all{
+                flex-direction: column;  
+                align-items:center;
+                margin: 0s;
+            }
+            .block_first{
+                order: 3;
+            }
+        }
+        ul{
+            float: right;
+        }
+        li{
+            margin-right: 20px;
+        }
+        .icons{
+            float:right;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="float">
+        <h1>Media</h1>
+        <ul class="menu">
+            <li>Home</li>
+            <li>News<hr></li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="all">
+        <div class="block_first">
+            <h3>Last News</h3>
+            <hr >
+            <h6>BUSNESS</h6>
+            <h3>Conseptur eos ipsam possimus</h3>
+            <h6>by Modi Cumque</h6>
+            <p>Mollitia modi cumque architecto commodi illum conseq sed nihil error aliquam accusamus</p>
+            <h6>2 HOVERS AGO</h6>
+            <hr>
+            <h6>ART</h6>
+            <h3>Lorem architecto commodi illum</h3>
+            <h6>by Timus Onihil</h6>
+            <p>Dolorenipsam possimus mollia modi cumque architecto commodi illum consequuntur!</p>
+            <h6>4 HOVER AGO</h6>
+            <hr>
+        </div>
+        <div class="block_second">
+            <h2>CONSERTUP EOS IPSAM POSSIMUS</h2>
+            <h6>by Modi Cumque</h6>
+            <img src="urbanization.jpg" alt="city" class="three">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sed beatae excepturi quasi officia a explicabo debitis itaque iusto necessitatibus amet, cum possimus nam quidem maiores in iste dignissimos neque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illo doloremque nostrum at magni sunt totam ad itaque, explicabo, unde eum excepturi quia eius? Veritatis commodi cumque doloremque modi distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptatibus earum enim? Culpa mollitia quasi quas dicta. Atque in nisi, dolores placeat distinctio quas assumenda quo eligendi cum ullam ratione.</p>
+            <img class="icons" src="social_icons.png" alt="icons">
+        </div>
+        <div class="block_three">
+            <h3>Osed Accusamus</h3><hr>
+            <img src="unnamed.png" alt="unnamed">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque vero ratione ea eveniet neque deleniti dignissimos voluptates explicabo. Amet, aliquid voluptas consequatur voluptate molestiae nulla maxime dolores dolore iusto!</p>
+            <h6>by Modi Cumque</h6><hr>
+            <img src="unnamed.png" alt="unnamed">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque vero ratione ea eveniet neque deleniti dignissimos voluptates explicabo. Amet, aliquid voluptas consequatur voluptate molestiae nulla maxime dolores dolore iusto!</p>
+            <h6>by Timus Onihil</h6><hr>
+        </div>
+    </div>
+</body>
+</html>
